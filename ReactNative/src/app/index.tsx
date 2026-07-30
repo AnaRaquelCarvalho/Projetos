@@ -21,6 +21,7 @@ function getDevMenuHint() {
     );
   }
   const shortcut = Platform.OS === 'android' ? 'cmd+m (or ctrl+m)' : 'cmd+d';
+
   return (
     <ThemedText type="small">
       press <ThemedText type="code">{shortcut}</ThemedText>
@@ -51,7 +52,7 @@ export default function HomeScreen() {
           <HintRow title="Dev tools" hint={getDevMenuHint()} />
           <HintRow
             title="Fresh start"
-            hint={<ThemedText type="code">Novo Projeto Agora!</ThemedText>}
+            hint={<ThemedText type="code">npm run reset-project</ThemedText>}
           />
         </ThemedView>
 
