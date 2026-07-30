@@ -11,7 +11,7 @@ import { BottomTabInset, MaxContentWidth, Spacing } from '@/constants/theme';
 
 function getDevMenuHint() {
   if (Platform.OS === 'web') {
-    return <ThemedText type="small">use browser devtools</ThemedText>;
+    return <ThemedText type="small"> use browser devtools</ThemedText>;
   }
   if (Device.isDevice) {
     return (
@@ -46,12 +46,12 @@ export default function HomeScreen() {
         <ThemedView type="backgroundElement" style={styles.stepContainer}>
           <HintRow
             title="Try editing"
-            hint={<ThemedText type="code">src/app/index.tsx</ThemedText>}
+            hint={<ThemedText type="code">Olá, React Native!</ThemedText>}
           />
           <HintRow title="Dev tools" hint={getDevMenuHint()} />
           <HintRow
             title="Fresh start"
-            hint={<ThemedText type="code">npm run reset-project</ThemedText>}
+            hint={<ThemedText type="code">Novo Projeto Agora!</ThemedText>}
           />
         </ThemedView>
 
